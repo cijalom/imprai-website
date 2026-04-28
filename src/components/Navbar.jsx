@@ -3,7 +3,7 @@ import logo from "../assets/logo.png"
 
 const navLinks = [
     { path: "/", label: "Home" },
-    { path: "/proposal", label: "Proposal" },
+    { path: "/faq", label: "FAQ" },
     { path: "/mission-statement", label: "Mission Statement" },
     { path: "/myths-versus-facts", label: "Myths Versus Facts" },
     { path: "/take-action", label: "Take Action" }
