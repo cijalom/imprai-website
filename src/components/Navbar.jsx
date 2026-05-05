@@ -3,8 +3,8 @@ import logo from "../assets/logo.png"
 
 const navLinks = [
     { path: "/", label: "Home" },
-    { path: "/faq", label: "FAQ" },
     { path: "/mission-statement", label: "Mission Statement" },
+    { path: "/faq", label: "FAQ" },
     { path: "/myths-versus-facts", label: "Myths Versus Facts" },
     { path: "/take-action", label: "Take Action" }
 ]
@@ -13,8 +13,8 @@ function Navbar() {
     const location = useLocation();
 
     return (
-        <nav className = "bg-stone-900 border-b border-stone-700">
-            <div className = "mx-auto px-6 py-4 flex items-center justify-between">
+        <nav className = "bg-stone-200 border-b border-stone-400">
+            <div className = "mx-auto px-6 py-3 flex items-center justify-between">
                 {/* Links */}
                 <div className = "flex items-center gap-6">
                     {navLinks.map(({ path, label }) => (
@@ -22,8 +22,8 @@ function Navbar() {
                             key = {path}
                             to = {path}
                             className = {location.pathname === path ?
-                                "text-green-400 text-lg font-light" :
-                                "text-stone-300 text-lg font-light hover:text-green-600"
+                                "text-green-600 text-lg font-light hover:text-green-700" :
+                                "text-stone-800 text-lg font-light hover:text-green-700"
                             }
                         >
                             {label}
@@ -32,7 +32,9 @@ function Navbar() {
                 </div>
 
                 {/* Logo */}
-                <img src = {logo} alt = "logo" className = {"w-10 h-10"}/>
+                <div className = "bg-stone-300 rounded-full p-1">
+                    <img src = {logo} alt = "logo" className = {"w-10 h-10"}/>
+                </div>
             </div>
         </nav>
     )
