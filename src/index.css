@@ -19,3 +19,15 @@ body {
 .delay-1 { animation-delay: 0.25s }
 .delay-2 { animation-delay: 0.5s }
 .delay-3 { animation-delay: 0.75s }
+
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.dropdown-content.open {
+    max-height: 200px;
+    transition: max-height 0.2s ease-in-out;
+    margin-top: 0.5rem;
+}
