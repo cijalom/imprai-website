@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-    base: "/imprai-website/",
+    base: "./",
     plugins: [
         react(),
         tailwindcss()
