@@ -3,12 +3,20 @@ import faq_cm from "../assets/faq_cm.png";
 import Footer from "../components/Footer.jsx"
 import Dropdown from "../components/Dropdown.jsx"
 import {Link} from "react-router-dom";
+import {useState} from "react";
 
 function FAQ() {
+    const [loaded, setLoaded] = useState(false)
+
     return (
         <div>
-            <div className = "relative h-52 bg-green-600 flex flex-col justify-center items-center gap-2 overflow-hidden">
-                <img src = {faq_banner} className = "object-cover blur-sm absolute inset-0 w-full h-full scale-110" alt = "no banner :("/>
+            <div className = "relative h-52 bg-stone-700 flex flex-col justify-center items-center gap-2 overflow-hidden">
+                <img
+                    src = {faq_banner}
+                    onLoad = {() => setLoaded(true)}
+                    className = {`object-cover blur-sm absolute inset-0 w-full h-full scale-110 transition-opacity duration-500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+                    alt = "no banner :("
+                />
                 <h1 className = "absolute text-6xl text-white">
                     Frequently Asked Questions
                 </h1>

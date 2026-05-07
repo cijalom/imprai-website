@@ -4,12 +4,20 @@ import mission_statement_3 from '../assets/mission_statement_3.png'
 import mission_statement_banner from '../assets/mission_statement_banner.gif'
 import {Link} from "react-router-dom";
 import Footer from "../components/Footer.jsx";
+import {useState} from "react";
 
 function MissionStatement() {
+    const [loaded, setLoaded] = useState(false)
+
     return (
         <div>
-            <div className = "relative h-52 bg-green-600 flex flex-col justify-center items-center gap-2 overflow-hidden">
-                <img src = {mission_statement_banner} className = "object-cover blur-sm absolute inset-0 w-full h-full scale-110"/>
+            <div className = "relative h-52 bg-stone-700 flex flex-col justify-center items-center gap-2 overflow-hidden">
+                <img
+                    src = {mission_statement_banner}
+                    onLoad = {() => setLoaded(true)}
+                    className = {`object-cover blur-sm absolute inset-0 w-full h-full scale-110 transition-opacity duration-500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+                    alt = "no banner :("
+                />
                 <h1 className = "absolute text-6xl text-white">
                     Mission Statement
                 </h1>
