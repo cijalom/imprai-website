@@ -15,7 +15,7 @@ function FAQ() {
                     src = {faq_banner}
                     onLoad = {() => setLoaded(true)}
                     className = {`object-cover blur-sm absolute inset-0 w-full h-full scale-110 transition-opacity duration-500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
-                    alt = "no banner :("
+                    alt = " "
                 />
                 <h1 className = "absolute text-6xl text-white">
                     Frequently Asked Questions
@@ -40,7 +40,7 @@ function FAQ() {
                         </Link>
                     </div>
                     <div className = "fade-in h-120 w-px bg-black"></div>
-                    <img src = {faq_cm} className = "object-cover object-center w-200 h-120 fade-in delay-2 text-black" alt = "image placeholder"/>
+                    <img src = {faq_cm} className = "object-cover object-center w-200 h-120 fade-in delay-2 text-black" alt = " "/>
                 </div>
             </div>
             <Footer/>
