@@ -1,12 +1,12 @@
 import MythVersusFactBox from "../components/MythVersusFactBox.jsx";
-import mvf_banner from "../assets/mvf_banner.gif";
+import mvf_banner from "../assets/mvf/mvf_banner.gif";
 import {useState} from "react";
 import Footer from "../components/Footer.jsx";
-import mvf_1 from "../assets/mvf_1.png"
-import mvf_2 from "../assets/mvf_2.png"
-import mvf_3 from "../assets/mvf_3.png"
-import mvf_4 from "../assets/mvf_4.png"
-import mvf_bottom from "../assets/mvf_bottom.jpg"
+import mvf_1 from "../assets/mvf/mvf_1.png"
+import mvf_2 from "../assets/mvf/mvf_2.png"
+import mvf_3 from "../assets/mvf/mvf_3.png"
+import mvf_4 from "../assets/mvf/mvf_4.png"
+import mvf_bottom from "../assets/mvf/mvf_bottom.jpg"
 import {Link} from "react-router-dom";
 
 function MythsVersusFacts() {
