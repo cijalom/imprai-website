@@ -15,7 +15,6 @@ function Navbar() {
     return (
         <nav className = "bg-stone-200 border-b border-stone-400">
             <div className = "mx-auto px-6 py-3 flex items-center justify-between">
-                {/* Links */}
                 <div className = "flex items-center gap-6">
                     {navLinks.map(({ path, label }) => (
                         <Link
@@ -30,8 +29,6 @@ function Navbar() {
                         </Link>
                     ))}
                 </div>
-
-                {/* Logo */}
                 <div className = "bg-stone-300 rounded-full p-1">
                     <img src = {logo} alt = "logo" className = {"w-10 h-10"}/>
                 </div>
