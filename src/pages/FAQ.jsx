@@ -1,5 +1,5 @@
-import faq_banner from "../assets/faq_banner.gif";
-import faq_cm from "../assets/faq_cm.png";
+import faq_banner from "../assets/faq/faq_banner.gif";
+import faq_cm from "../assets/faq/faq_cm.png";
 import Footer from "../components/Footer.jsx"
 import Dropdown from "../components/Dropdown.jsx"
 import {Link} from "react-router-dom";
