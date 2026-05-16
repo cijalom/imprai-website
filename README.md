@@ -1,5 +1,7 @@
 # IMPRAI Website
 
+PLEASE NOTE: This website is just conceptual, and does not represent any campaign that actually exists.
+
 A static advocacy website for **IMPRAI**, a campaign promoting responsible and regulated artificial intelligence development. The site educates visitors on AI's societal and environmental impacts, combats misinformation, and empowers people to take action.
 
 Built with React, Vite, and Tailwind CSS. Deployed via GitHub Pages.
