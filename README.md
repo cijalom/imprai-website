@@ -124,6 +124,7 @@ imprai-website/
 ## Contributors
 
 Code: Aaron James Caddick
+
 Research: Maximus Bauman, Camille Witherspoon
 
 © 2026 IMPRAI. All rights reserved.
